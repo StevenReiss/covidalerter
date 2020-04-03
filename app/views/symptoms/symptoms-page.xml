@@ -1,0 +1,15 @@
+<Page loaded="pageLoaded" class="page"
+    xmlns="http://www.nativescript.org/tns.xsd">
+    <ActionBar title="Symptoms" class="action-bar">
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <Label textWrap='true'
+                text="Check list of symbols, input field for date started, cancel and accept buttons" />
+            <Label textWrap='true'
+                text="Cancel goes to status, accept goes to report" />
+            <!--Add your page content here-->
+        </StackLayout>
+    </ScrollView>
+</Page>

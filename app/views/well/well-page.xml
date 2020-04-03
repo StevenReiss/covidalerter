@@ -1,0 +1,17 @@
+<Page loaded="pageLoaded" class="page"
+    xmlns="http://www.nativescript.org/tns.xsd">
+    <ActionBar title="Well" class="action-bar">
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <Label
+                text="Ensure person is feeling healthy again.  Ask when? Tell to self isolate for k more days"
+                textWrap='true' />
+            <Label
+                text="Agreed button reports healthy and goes back to status page"
+                textWrap='true' />
+            <!--Add your page content here-->
+        </StackLayout>
+    </ScrollView>
+</Page>

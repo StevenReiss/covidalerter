@@ -1,0 +1,35 @@
+<Page loaded="pageLoaded" class="page"
+    xmlns="http://www.nativescript.org/tns.xsd">
+    <ActionBar title="Status" class="action-bar">
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="home-panel">
+			<!-- Button should be green/yellow/rew/black/whiter no expose/possible/exposted/sick/over it -->
+            <Button id='statusbtn' class='statusbtn'
+                text="No Exposure Detected" tap="{{ onButtonTap }}"
+                width="70%" height='40' backgroundColor="green"
+                color='white' />
+            <TextView editable="false" id='statusexplain'
+                class='statusexplain'>
+                <FormattedString>
+                    <Span
+                        text="No exposure to anyone who is contagious with the Covid19 virus has been detected. " />
+                </FormattedString>
+            </TextView>
+            <TextView editable="false">
+                <FormattedString>
+                    <Span
+                        text="Click on the status to manually update.  Automatic updates occur every hour or so. " />
+                </FormattedString>
+            </TextView>
+			<!-- should be report yourself better if they are sick -->
+            <Button id='sickbtn' text="Report Yourself Sick" tap="{{ onButtonTap }}"
+                backgroundColor='red' color='white' />
+            <StackLayout orientation="horizontal">
+                <Button text="Preferences" tap="{{ onButtonTap }}" />
+                <Button text="About" tap="{{ aboutButtonTap }}" /> 
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

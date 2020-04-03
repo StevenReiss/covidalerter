@@ -1,0 +1,60 @@
+<Page loaded="pageLoaded" class="page"
+    xmlns="http://www.nativescript.org/tns.xsd">
+    <ActionBar title="About" class="action-bar">
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <Label text="COVID-19  ALERTER" class='title' />
+            <TextView editable="false">
+                <FormattedString>
+                    <Span
+                        text="Covid19Alerter was written by Brown faculty and students in response to the Covid19 " />
+                    <Span
+                        text="epidemic.  It is available as open source code on GitHub. " />
+                    "
+                </FormattedString>
+            </TextView>
+            <HtmlView backgroundColor="darkgray" html="For more information contact &lt;a href='mailto:spr+covid@cs.brown.edu'&gt;Steven Reiss&lt;/a&gt;" />
+
+            <TextView editable="false">
+                <FormattedString>
+                    <Span
+                        text='This applcation uses BlueTooth to detech other people that come near you over time. ' />
+                    <Span
+                        text='It periodically checks if anyone you have been near might be sick or exposed to ' />
+                    <Span
+                        text='someone who might be sick. If so, it alerts you that you might have been exposed and ' />
+                    <Span
+                        text='gives you the date and location of the possible exposure.' />
+                </FormattedString>
+            </TextView>
+            <TextView editable="false">
+                <FormattedString>
+                    <Span
+                        text='This application does not send or save any personal infomation.  It uses a secure ' />
+                    <Span
+                        text='hash of a BlueTooth address as a proxy for a device and devices as a proxy for ' />
+                    <Span
+                        text='a person.  No information about you is sent unless you report yourself as sick, ' />
+                    <Span
+                        text='and then only the infomrration that you specifically allow.' />
+                </FormattedString>
+            </TextView>
+            <TextView editable="false">
+                <FormattedString>
+                    <Span
+                        text="This application needs permission to access both BlueTooth and your location in order " />
+                    <Span
+                        text='to run.  It needs these while running in background, not just when active.  It also ' />
+                    <Span
+                        text='needs permission to send notifications or alerts. ' />
+                </FormattedString>
+            </TextView>
+            <StackLayout orientation="horizontal">
+                <Button text="Proceed" tap="{{ onButtonTap }}" />
+                <Button text="About" tap="{{ onButtonTap }}" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

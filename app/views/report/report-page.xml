@@ -1,0 +1,17 @@
+<Page loaded="pageLoaded" class="page"
+    xmlns="http://www.nativescript.org/tns.xsd">
+    <ActionBar title="Report" class="action-bar">
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <Label textWrap='true'
+                text="Give advice such as contact doctor, self-isolate" />
+            <Label textWrap='true'
+                text="Offer to report to state or local authority, getting name/address optionally" />
+            <Label textWrap='true'
+                text="All buttons go back to status page" />
+            <!--Add your page content here-->
+        </StackLayout>
+    </ScrollView>
+</Page>
